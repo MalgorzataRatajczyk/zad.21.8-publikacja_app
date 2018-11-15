@@ -2,9 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/nodeappdatabase', {
-    useMongoClient: true
-});
+mongoose.connect('mongodb://user1:user_1@ds043158.mlab.com:43158/data-1');
 
 // schemat aplikacji, która będzie tworzyć użytkowników
 const userSchema = new Schema({
